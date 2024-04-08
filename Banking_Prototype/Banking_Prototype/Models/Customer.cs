@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Banking_Prototype.Models
 {
-    internal class Customer
+    public class Customer
     {
         // Properties
         public int CustomerNumber { get; set; }
