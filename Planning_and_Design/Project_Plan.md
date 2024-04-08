@@ -3,14 +3,14 @@
 ## Task Breakdown
 
 ## Initiation
-- [ ] UML Diagram for business logic and relationships
-- [ ] Architecture design focusing on associations, inheritance and abstract classes.
+- [x] UML Diagram for business logic and relationships
+- [x] Architecture design focusing on associations, inheritance and abstract classes.
 
 ## Planning
-- [ ] Use git for version control with feature branch and merging changes into master branch
+- [x] Use git for version control with feature branch and merging changes into master branch
 
 ## Execution
-- [ ] Implement Classes
+- [x] Implement Classes
 - [ ] Create Constructors
 - [ ] Develop GUI prototype for manage accounts, deposit/withdraw money, view transaction history
 - [ ] Incorprate account classes
