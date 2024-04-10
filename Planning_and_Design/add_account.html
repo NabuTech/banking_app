@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#">
+            <h1>MyBank</h1>
+        </a>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Add Account</h2>
+            <form id="addAccountForm">
+                <label for="accountType">Account Type:</label>
+                <select id="accountType" name="accountType" required>
+                    <option value="Everyday">Everyday Account</option>
+                    <option value="Investment">Investment Account</option>
+                    <option value="Omni">Omni Account</option>
+                </select>
+                <label for="initialDeposit">Initial Deposit:</label>
+                <input type="number" id="initialDeposit" name="initialDeposit" min="0" required>
+                <button type="submit">Add Account</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MyBank</p>
+    </footer>
+</body>
+</html>

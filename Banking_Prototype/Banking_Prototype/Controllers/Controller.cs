@@ -10,8 +10,8 @@ namespace Banking_Prototype.Controllers
     public class Controller
     {
         // Properties
-        private List<Customer> customers;
-        private List<Account> accounts;
+        public List<Customer> customers;
+        public List<Account> accounts;
 
         // Constructor
         public Controller()

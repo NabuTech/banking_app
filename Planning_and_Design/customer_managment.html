@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .customer-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .customer-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .customer-item h3 {
+            margin-top: 0;
+        }
+
+        .customer-item p {
+            margin: 5px 0;
+        }
+
+        .add-customer-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .add-customer-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .edit-customer-btn,
+        .delete-customer-btn {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .edit-customer-btn:hover,
+        .delete-customer-btn:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <h1>MyBank</h1>
+        </a>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Customer Management</h2>
+            <ul class="customer-list">
+                <!-- Customer Item -->
+                <li class="customer-item">
+                    <h3>John Doe</h3>
+                    <p>Customer ID: C1001</p>
+                    <p>Contact: john@example.com</p>
+                    <button class="edit-customer-btn">Edit</button>
+                    <button class="delete-customer-btn">Delete</button>
+                </li>
+
+                <!-- Customer Item -->
+                <li class="customer-item">
+                    <h3>Jane Smith</h3>
+                    <p>Customer ID: C1002</p>
+                    <p>Contact: jane@example.com</p>
+                    <button class="edit-customer-btn">Edit</button>
+                    <button class="delete-customer-btn">Delete</button>
+                </li>
+
+                <!-- Customer Item -->
+                <li class="customer-item">
+                    <h3>Michael Johnson</h3>
+                    <p>Customer ID: C1003</p>
+                    <p>Contact: michael@example.com</p>
+                    <button class="edit-customer-btn">Edit</button>
+                    <button class="delete-customer-btn">Delete</button>
+                </li>
+            </ul>
+
+            <button class="add-customer-btn">Add Customer</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MyBank</p>
+    </footer>
+</body>
+</html>

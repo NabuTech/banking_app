@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Banking_Prototype
 {
-    public partial class Main : Form
+    public partial class AccountManagementForm : Form
     {
-        public Main()
+        public AccountManagementForm()
         {
             InitializeComponent();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

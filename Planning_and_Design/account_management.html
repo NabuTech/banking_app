@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .customer-info label,
+        .account-list label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .customer-info input,
+        .account-list input,
+        .account-list button {
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .account-list {
+            margin-bottom: 20px;
+        }
+
+        .account-dropdown {
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .account-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .account-item h3 {
+            margin-top: 0;
+        }
+
+        .add-account-btn,
+        .deposit-btn,
+        .withdraw-btn,
+        .history-btn,
+        .transfer-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .add-account-btn:hover,
+        .deposit-btn:hover,
+        .withdraw-btn:hover,
+        .history-btn:hover,
+        .transfer-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .action-buttons button {
+            margin-right: 10px;
+        }
+
+        .transfer-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .transfer-form h3 {
+            margin-top: 0;
+        }
+
+        .transfer-form label,
+        .transfer-form select,
+        .transfer-form input {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .transfer-form button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <h1>MyBank</h1>
+        </a>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Customer Information</h2>
+            <div class="customer-info">
+                <label for="customerId">Customer ID:</label>
+                <input type="text" id="customerId" name="customerId" value="C1001" readonly>
+                <label for="customerName">Name:</label>
+                <input type="text" id="customerName" name="customerName" value="John Doe" readonly>
+                <label for="customerContact">Contact Details:</label>
+                <input type="text" id="customerContact" name="customerContact" value="john@example.com" readonly>
+            </div>
+
+            <h2>Accounts</h2>
+            <div class="account-list">
+                <select class="account-dropdown">
+                    <option value="A1001">Everyday Account (A1001) - $5000</option>
+                    <option value="A2001">Investment Account (A2001) - $10000</option>
+                    <option value="A3001">Omni Account (A3001) - $7500</option>
+                </select>
+            </div>
+
+            <div class="buttons-container">
+                <div class="action-buttons">
+                    <button class="deposit-btn">Deposit</button>
+                    <button class="withdraw-btn">Withdraw</button>
+                    <button class="history-btn">Transaction History</button>
+                </div>
+                <button class="add-account-btn">Add Account</button>
+            </div>
+
+            <div class="transfer-form">
+                <h3>Transfer Between Accounts</h3>
+                <form id="transferForm">
+                    <label for="fromAccount">From Account:</label>
+                    <select id="fromAccount" name="fromAccount" required>
+                        <option value="A1001">Everyday Account (A1001) - $5000</option>
+                        <option value="A2001">Investment Account (A2001) - $10000</option>
+                        <option value="A3001">Omni Account (A3001) - $7500</option>
+                    </select>
+                    <label for="toAccount">To Account:</label>
+                    <select id="toAccount" name="toAccount" required>
+                        <option value="A1001">Everyday Account (A1001) - $5000</option>
+                        <option value="A2001">Investment Account (A2001) - $10000</option>
+                        <option value="A3001">Omni Account (A3001) - $7500</option>
+                    </select>
+                    <label for="transferAmount">Transfer Amount:</label>
+                    <input type="number" id="transferAmount" name="transferAmount" min="0" required>
+                    <button class="transfer-btn" type="submit">Transfer</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MyBank</p>
+    </footer>
+</body>
+</html>
