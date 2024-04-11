@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Banking_Prototype
 {
-    public partial class CustomerManagmentForm : Form
+    public partial class EditCustomerForm : Form
     {
-        public CustomerManagmentForm()
+        public EditCustomerForm()
         {
             InitializeComponent();
-        }
-
-        private void CustomerManagmentForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
