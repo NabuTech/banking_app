@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Banking_Prototype.Models;
 using Banking_Prototype.Controllers;
+using System.Xml.Linq;
 
 
 namespace Banking_Prototype
@@ -74,6 +75,20 @@ namespace Banking_Prototype
         private void CustomerManagmentForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void listBoxCustomers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBoxCustomers.SelectedIndex != -1)
+            {
+                // Get the selected customer from the list box
+                Customer selectedCustomer = customers[listBoxCustomers.SelectedIndex];
+
+                // Display the customer data in the text boxes
+                txtCustomerID.Text = selectedCustomer.CustomerNumber.ToString();
+                txtCustomerName.Text = selectedCustomer.Name;
+                txtCustomerContactDetails.Text = selectedCustomer.ContactDetails;
+            }
         }
     }
 }

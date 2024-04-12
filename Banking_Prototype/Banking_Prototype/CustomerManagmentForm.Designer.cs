@@ -33,12 +33,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.listBoxCustomers = new System.Windows.Forms.ListBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCustomerContactDetails = new System.Windows.Forms.TextBox();
+            this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCustomerID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
@@ -50,12 +50,12 @@
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.listBoxCustomers);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txtCustomerContactDetails);
+            this.panel2.Controls.Add(this.txtCustomerName);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtCustomerID);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(27, 101);
             this.panel2.Name = "panel2";
@@ -111,28 +111,29 @@
             this.listBoxCustomers.Name = "listBoxCustomers";
             this.listBoxCustomers.Size = new System.Drawing.Size(273, 277);
             this.listBoxCustomers.TabIndex = 12;
+            this.listBoxCustomers.SelectedIndexChanged += new System.EventHandler(this.listBoxCustomers_SelectedIndexChanged);
             // 
-            // textBox3
+            // txtCustomerContactDetails
             // 
-            this.textBox3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.textBox3.Location = new System.Drawing.Point(478, 167);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(0, 20, 20, 0);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(155, 26);
-            this.textBox3.TabIndex = 11;
-            this.textBox3.Text = "john@example.com";
+            this.txtCustomerContactDetails.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustomerContactDetails.ForeColor = System.Drawing.Color.DarkBlue;
+            this.txtCustomerContactDetails.Location = new System.Drawing.Point(478, 167);
+            this.txtCustomerContactDetails.Margin = new System.Windows.Forms.Padding(0, 20, 20, 0);
+            this.txtCustomerContactDetails.Name = "txtCustomerContactDetails";
+            this.txtCustomerContactDetails.ReadOnly = true;
+            this.txtCustomerContactDetails.Size = new System.Drawing.Size(155, 26);
+            this.txtCustomerContactDetails.TabIndex = 11;
             // 
-            // textBox2
+            // txtCustomerName
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.textBox2.Location = new System.Drawing.Point(478, 129);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(0, 20, 20, 0);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(251, 26);
-            this.textBox2.TabIndex = 10;
-            this.textBox2.Text = "John Doe";
+            this.txtCustomerName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustomerName.ForeColor = System.Drawing.Color.DarkBlue;
+            this.txtCustomerName.Location = new System.Drawing.Point(478, 129);
+            this.txtCustomerName.Margin = new System.Windows.Forms.Padding(0, 20, 20, 0);
+            this.txtCustomerName.Name = "txtCustomerName";
+            this.txtCustomerName.ReadOnly = true;
+            this.txtCustomerName.Size = new System.Drawing.Size(251, 26);
+            this.txtCustomerName.TabIndex = 10;
             // 
             // label6
             // 
@@ -173,16 +174,16 @@
             this.label4.Text = "Customer ID:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
+            // txtCustomerID
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.textBox1.Location = new System.Drawing.Point(478, 91);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(0, 20, 20, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "C1001";
+            this.txtCustomerID.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustomerID.ForeColor = System.Drawing.Color.DarkBlue;
+            this.txtCustomerID.Location = new System.Drawing.Point(478, 91);
+            this.txtCustomerID.Margin = new System.Windows.Forms.Padding(0, 20, 20, 0);
+            this.txtCustomerID.Name = "txtCustomerID";
+            this.txtCustomerID.ReadOnly = true;
+            this.txtCustomerID.Size = new System.Drawing.Size(100, 26);
+            this.txtCustomerID.TabIndex = 5;
             // 
             // label2
             // 
@@ -229,12 +230,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCustomerContactDetails;
+        private System.Windows.Forms.TextBox txtCustomerName;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCustomerID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBoxCustomers;
