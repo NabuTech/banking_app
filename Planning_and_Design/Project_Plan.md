@@ -12,7 +12,7 @@
 ## Execution
 - [x] Implement Classes
 - [x] Create Constructors
-- [ ] Develop GUI prototype for manage accounts, deposit/withdraw money, view transaction history
+- [x] Develop GUI prototype for manage accounts, deposit/withdraw money, view transaction history
 - [ ] Incorprate account classes
 - [ ] Enhance data model to handle one-to-many relationships and distinguish between customers and staff
 - [ ] Implement serialization to save and retrieve customer and account data.
