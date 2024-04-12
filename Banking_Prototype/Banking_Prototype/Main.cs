@@ -16,5 +16,14 @@ namespace Banking_Prototype
         {
             InitializeComponent();
         }
+
+        private void BtnCustomerManangement_Click(object sender, EventArgs e)
+        {
+            CustomerManagmentForm customerManagmentForm = new CustomerManagmentForm();
+
+            customerManagmentForm.Show();
+
+            this.Hide();
+        }
     }
 }

@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.listBoxCustomers = new System.Windows.Forms.ListBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -37,10 +41,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +49,7 @@
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.listBox1);
+            this.panel2.Controls.Add(this.listBoxCustomers);
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.label6);
@@ -61,6 +61,56 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(734, 408);
             this.panel2.TabIndex = 7;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkRed;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.GhostWhite;
+            this.button2.Location = new System.Drawing.Point(648, 213);
+            this.button2.Margin = new System.Windows.Forms.Padding(20);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(66, 32);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Delete";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.GhostWhite;
+            this.button1.Location = new System.Drawing.Point(563, 213);
+            this.button1.Margin = new System.Windows.Forms.Padding(20);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(70, 32);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Edit";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.DarkBlue;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.GhostWhite;
+            this.button4.Location = new System.Drawing.Point(71, 356);
+            this.button4.Margin = new System.Windows.Forms.Padding(20);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(139, 32);
+            this.button4.TabIndex = 13;
+            this.button4.Text = "Add Customer";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // listBoxCustomers
+            // 
+            this.listBoxCustomers.FormattingEnabled = true;
+            this.listBoxCustomers.Location = new System.Drawing.Point(17, 60);
+            this.listBoxCustomers.Name = "listBoxCustomers";
+            this.listBoxCustomers.Size = new System.Drawing.Size(273, 277);
+            this.listBoxCustomers.TabIndex = 12;
             // 
             // textBox3
             // 
@@ -159,56 +209,6 @@
             this.label1.Text = "myBank";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(17, 60);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(273, 277);
-            this.listBox1.TabIndex = 12;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.DarkBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.GhostWhite;
-            this.button4.Location = new System.Drawing.Point(71, 356);
-            this.button4.Margin = new System.Windows.Forms.Padding(20);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 32);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "Add Customer";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DarkBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.GhostWhite;
-            this.button1.Location = new System.Drawing.Point(563, 213);
-            this.button1.Margin = new System.Windows.Forms.Padding(20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 32);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Edit";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkRed;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.GhostWhite;
-            this.button2.Location = new System.Drawing.Point(648, 213);
-            this.button2.Margin = new System.Windows.Forms.Padding(20);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 32);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // CustomerManagmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,7 +237,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBoxCustomers;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
