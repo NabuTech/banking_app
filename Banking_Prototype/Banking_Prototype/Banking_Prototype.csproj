@@ -52,6 +52,18 @@
     <Compile Include="AccountManagementForm.Designer.cs">
       <DependentUpon>AccountManagementForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAccountForm.Designer.cs">
+      <DependentUpon>AddAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomerForm.Designer.cs">
+      <DependentUpon>AddCustomerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\Controller.cs" />
     <Compile Include="CustomerManagmentForm.cs">
       <SubType>Form</SubType>
@@ -74,6 +86,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AccountManagementForm.resx">
       <DependentUpon>AccountManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAccountForm.resx">
+      <DependentUpon>AddAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCustomerForm.resx">
+      <DependentUpon>AddCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerManagmentForm.resx">
+      <DependentUpon>CustomerManagmentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
