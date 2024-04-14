@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BtnCustomerEdit = new System.Windows.Forms.Button();
+            this.BtnDeleteCustomer = new System.Windows.Forms.Button();
+            this.btnAddCustomer = new System.Windows.Forms.Button();
             this.listBoxCustomers = new System.Windows.Forms.ListBox();
             this.txtCustomerContactDetails = new System.Windows.Forms.TextBox();
             this.txtCustomerName = new System.Windows.Forms.TextBox();
@@ -46,9 +46,9 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.BtnCustomerEdit);
+            this.panel2.Controls.Add(this.BtnDeleteCustomer);
+            this.panel2.Controls.Add(this.btnAddCustomer);
             this.panel2.Controls.Add(this.listBoxCustomers);
             this.panel2.Controls.Add(this.txtCustomerContactDetails);
             this.panel2.Controls.Add(this.txtCustomerName);
@@ -62,47 +62,50 @@
             this.panel2.Size = new System.Drawing.Size(734, 408);
             this.panel2.TabIndex = 7;
             // 
-            // button2
+            // BtnCustomerEdit
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkRed;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.GhostWhite;
-            this.button2.Location = new System.Drawing.Point(648, 213);
-            this.button2.Margin = new System.Windows.Forms.Padding(20);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 32);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = false;
+            this.BtnCustomerEdit.BackColor = System.Drawing.Color.DarkBlue;
+            this.BtnCustomerEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCustomerEdit.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCustomerEdit.ForeColor = System.Drawing.Color.GhostWhite;
+            this.BtnCustomerEdit.Location = new System.Drawing.Point(567, 213);
+            this.BtnCustomerEdit.Margin = new System.Windows.Forms.Padding(20);
+            this.BtnCustomerEdit.Name = "BtnCustomerEdit";
+            this.BtnCustomerEdit.Size = new System.Drawing.Size(66, 32);
+            this.BtnCustomerEdit.TabIndex = 16;
+            this.BtnCustomerEdit.Text = "Edit";
+            this.BtnCustomerEdit.UseVisualStyleBackColor = false;
+            this.BtnCustomerEdit.Click += new System.EventHandler(this.BtnCustomerEdit_Click);
             // 
-            // button1
+            // BtnDeleteCustomer
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.GhostWhite;
-            this.button1.Location = new System.Drawing.Point(563, 213);
-            this.button1.Margin = new System.Windows.Forms.Padding(20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 32);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Edit";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnDeleteCustomer.BackColor = System.Drawing.Color.DarkRed;
+            this.BtnDeleteCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDeleteCustomer.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDeleteCustomer.ForeColor = System.Drawing.Color.GhostWhite;
+            this.BtnDeleteCustomer.Location = new System.Drawing.Point(648, 213);
+            this.BtnDeleteCustomer.Margin = new System.Windows.Forms.Padding(20);
+            this.BtnDeleteCustomer.Name = "BtnDeleteCustomer";
+            this.BtnDeleteCustomer.Size = new System.Drawing.Size(66, 32);
+            this.BtnDeleteCustomer.TabIndex = 15;
+            this.BtnDeleteCustomer.Text = "Delete";
+            this.BtnDeleteCustomer.UseVisualStyleBackColor = false;
+            this.BtnDeleteCustomer.Click += new System.EventHandler(this.BtnDeleteCustomer_Click);
             // 
-            // button4
+            // btnAddCustomer
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.GhostWhite;
-            this.button4.Location = new System.Drawing.Point(71, 356);
-            this.button4.Margin = new System.Windows.Forms.Padding(20);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 32);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "Add Customer";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnAddCustomer.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnAddCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddCustomer.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCustomer.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnAddCustomer.Location = new System.Drawing.Point(71, 356);
+            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(20);
+            this.btnAddCustomer.Name = "btnAddCustomer";
+            this.btnAddCustomer.Size = new System.Drawing.Size(139, 32);
+            this.btnAddCustomer.TabIndex = 13;
+            this.btnAddCustomer.Text = "Add Customer";
+            this.btnAddCustomer.UseVisualStyleBackColor = false;
+            this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
             // 
             // listBoxCustomers
             // 
@@ -219,8 +222,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
             this.Name = "CustomerManagmentForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CustomerManagmentForm";
-            this.Load += new System.EventHandler(this.CustomerManagmentForm_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -239,8 +242,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBoxCustomers;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BtnDeleteCustomer;
+        private System.Windows.Forms.Button btnAddCustomer;
+        private System.Windows.Forms.Button BtnCustomerEdit;
     }
 }

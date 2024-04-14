@@ -30,12 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtAddContactDetails = new System.Windows.Forms.TextBox();
+            this.txtAddCustomerName = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,8 +55,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.txtAddContactDetails);
+            this.panel1.Controls.Add(this.txtAddCustomerName);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.label4);
@@ -66,28 +66,27 @@
             this.panel1.Size = new System.Drawing.Size(560, 249);
             this.panel1.TabIndex = 21;
             // 
-            // label2
+            // txtAddContactDetails
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label2.Location = new System.Drawing.Point(12, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 29);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Add Customer";
+            this.txtAddContactDetails.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddContactDetails.ForeColor = System.Drawing.Color.DarkBlue;
+            this.txtAddContactDetails.Location = new System.Drawing.Point(77, 90);
+            this.txtAddContactDetails.Margin = new System.Windows.Forms.Padding(0, 20, 20, 0);
+            this.txtAddContactDetails.Name = "txtAddContactDetails";
+            this.txtAddContactDetails.Size = new System.Drawing.Size(251, 26);
+            this.txtAddContactDetails.TabIndex = 24;
+            this.txtAddContactDetails.Text = "johndoe@email.com";
             // 
-            // textBox4
+            // txtAddCustomerName
             // 
-            this.textBox4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.DarkBlue;
-            this.textBox4.Location = new System.Drawing.Point(77, 52);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(0, 20, 20, 0);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(251, 26);
-            this.textBox4.TabIndex = 23;
-            this.textBox4.Text = "John Doe";
+            this.txtAddCustomerName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddCustomerName.ForeColor = System.Drawing.Color.DarkBlue;
+            this.txtAddCustomerName.Location = new System.Drawing.Point(77, 52);
+            this.txtAddCustomerName.Margin = new System.Windows.Forms.Padding(0, 20, 20, 0);
+            this.txtAddCustomerName.Name = "txtAddCustomerName";
+            this.txtAddCustomerName.Size = new System.Drawing.Size(251, 26);
+            this.txtAddCustomerName.TabIndex = 23;
+            this.txtAddCustomerName.Text = "John Doe";
             // 
             // label10
             // 
@@ -116,6 +115,7 @@
             this.button4.TabIndex = 21;
             this.button4.Text = "Add Customer";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label4
             // 
@@ -130,16 +130,17 @@
             this.label4.Text = "Name:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
+            // label2
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.textBox1.Location = new System.Drawing.Point(77, 90);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(0, 20, 20, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(251, 26);
-            this.textBox1.TabIndex = 24;
-            this.textBox1.Text = "johndoe@email.com";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label2.Location = new System.Drawing.Point(12, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(178, 29);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Add Customer";
             // 
             // AddCustomerForm
             // 
@@ -151,6 +152,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AddCustomerForm";
             this.Text = "AddCustomerForm";
+            this.Load += new System.EventHandler(this.AddCustomerForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -162,10 +164,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtAddCustomerName;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAddContactDetails;
     }
 }
